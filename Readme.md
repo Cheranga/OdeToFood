@@ -1,4 +1,5 @@
 Custom Middleware
+```C#
  app.Use(next =>
            {
                //
