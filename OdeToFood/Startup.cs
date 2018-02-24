@@ -18,6 +18,7 @@ namespace OdeToFood
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IGreeter, Greeter>();
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -29,6 +30,14 @@ namespace OdeToFood
             {
                 app.UseDeveloperExceptionPage();
             }
+            //
+            // This will allow the middleware to serve static files and as well as "default" files
+            //
+            app.UseFileServer();
+            //
+            // Adding the MVC middleware
+            //
+            app.UseMvcWithDefaultRoute();
 
             app.Use(next =>
            {
