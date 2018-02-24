@@ -23,8 +23,8 @@
                    }
                };
            });
-
 ```
 
 # Environment Settings
 * `ASPNETCORE_ENVIRONMENT` - Defines the current environment (Development, Staging, Production, etc.)
+* You can add/modify/remove profiles, which can defined different environments (either through `launchSettings.json` or through project properties)
