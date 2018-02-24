@@ -1,4 +1,4 @@
-Custom Middleware
+# Custom Middleware
 ```C#
  app.Use(next =>
            {
@@ -24,6 +24,7 @@ Custom Middleware
                };
            });
 
+```
 
-
-ASPNETCORE_ENVIRONMENT - Defines the environment
+# Environment Settings
+* `ASPNETCORE_ENVIRONMENT` - Defines the current environment (Development, Staging, Production, etc.)
