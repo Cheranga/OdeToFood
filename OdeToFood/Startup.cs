@@ -32,6 +32,7 @@ namespace OdeToFood
             }
             //
             // This will allow the middleware to serve static files and as well as "default" files
+            // You can use "UseStaticFiles" which will serve only static files and, will NOT consider about default files
             //
             app.UseFileServer();
             //

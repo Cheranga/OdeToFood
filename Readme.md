@@ -39,3 +39,13 @@
 
 * Add the MVC middleware.
   * Use `app.UseMvcWithDefaultRoute` to install the MVC middleware.
+
+
+# Setting Routes
+> Setting of routes can be done in two ways.
+
+* Conventional Routes
+  * You can use `UseMvcWithDefaultRoute` inside the `Configure` method in `Startup` class, or you can the `UseMvc` Method and pass a method which configures the routes as you desire.
+
+* Attribute Routing
+

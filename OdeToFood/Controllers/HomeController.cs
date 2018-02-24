@@ -8,9 +8,9 @@ namespace OdeToFood.Controllers
 {
     public class HomeController : Controller
     {
-        public string Index()
+        public async Task<IActionResult> Index()
         {
-            return "Hello! Is it me you looking for?!";
+            return await Task.Run(() => Content("Hello from Home=>Index"));
         }
     }
 }
